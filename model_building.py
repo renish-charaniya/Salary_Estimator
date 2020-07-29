@@ -94,7 +94,7 @@ mean_absolute_error(y_test,tpred_rf)
 
 print(mean_absolute_error(y_test,(tpred_lm+tpred_rf)/2))
 
-"""
+
 import pickle
 pickl = {'model': gs.best_estimator_}
 pickle.dump( pickl, open( 'model_file' + ".p", "wb" ) )
@@ -107,4 +107,3 @@ with open(file_name, 'rb') as pickled:
 model.predict(np.array(list(X_test.iloc[1,:])).reshape(1,-1))[0]
 
 list(X_test.iloc[1,:])
-"""
