@@ -8,7 +8,7 @@ Created on Mon Jun  1 17:42:18 2020
 
 
 import pandas as pd
-df =pd.read_csv('glassdoor_jobs.csv')
+df=pd.read_csv('glassdoor_jobs.csv')
 
 
 #salary_parsing
